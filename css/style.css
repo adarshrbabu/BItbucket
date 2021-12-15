@@ -1,0 +1,1194 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-weight: normal;
+  text-decoration: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+ol,
+ul {
+  list-style: none;
+}
+del {
+  text-decoration: line-through;
+}
+body {
+  font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  color: #253858;
+  overflow-x: hidden;
+  min-width: 320px;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+input,
+textarea,
+select {
+  font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+a {
+  color: #253858;
+}
+a:hover,
+.submit:hover {
+  filter: alpha(opacity = 85);
+  -moz-opacity: 0.85;
+  -khtml-opacity: 0.85;
+  opacity: 0.85;
+}
+.thumb {
+  display: block;
+}
+.thumb img {
+  display: block;
+  width: 100%;
+}
+p {
+  line-height: 1.6em;
+  font-size: 16px;
+  font-family: "GT-Eesti", Arial;
+  font-weight: 500;
+  color: #42526e;
+}
+.hidden {
+  display: none;
+}
+br.clear {
+  clear: both;
+  line-height: 0;
+}
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+@font-face {
+  font-family: "GT-Eesti";
+  src: url("../fonts/GT-Eesti-Pro-Text-Light.woff2") format("woff2");
+  src: url("../fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"),
+    url("../fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT-Eesti";
+  src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff2") format("woff2");
+  src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff") format("woff"),
+    url("../fonts/GT-Eesti-Pro-Text-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT-Eesti";
+  src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff2") format("woff2");
+  src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff") format("woff"),
+    url("../fonts/GT-Eesti-Pro-Text-Medium.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT-Eesti";
+  src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff2") format("woff2");
+  src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff") format("woff"),
+    url("../fonts/GT-Eesti-Pro-Text-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap");
+
+::placeholder {
+  color: #c0ccda;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #c0ccda;
+}
+
+::-ms-input-placeholder {
+  color: #c0ccda;
+}
+header {
+  background-color: #fff;
+  height: 80px;
+  padding: 20px 0px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  display: inline-block;
+}
+header section.wrapper {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+header h1.left {
+  width: auto;
+}
+header h1.left img {
+  display: inline-block;
+}
+header nav.middle {
+  margin-right: 60px;
+}
+header nav.middle ul {
+  display: flex;
+  width: 100%;
+}
+header nav.middle ul li {
+  margin-left: 30px;
+  width: 120px;
+}
+header nav.middle ul li a {
+  color: #145fd0;
+  font-weight: 600;
+}
+header nav.right {
+  display: flex;
+  justify-content: center;
+}
+header nav.right ul {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+header nav.right ul li {
+  display: flex;
+  align-items: center;
+}
+header nav.right ul li a {
+  margin-right: 20px;
+  color: blue;
+}
+header nav.right ul li a.button {
+  border-color: #145fd0;
+  display: inline-block;
+  border: 1px solid blue;
+  padding: 6px 6px;
+  background-color: #0052cc;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 2px;
+}
+#spotlight {
+  padding: 110px 50px;
+  background-color: #f4f5f7;
+}
+#spotlight section.wrapper {
+}
+#spotlight section.container {
+  text-align: center;
+}
+#spotlight section.container h1 {
+  font-size: 2.7rem;
+  max-width: 600px;
+  margin: 0 auto;
+  font-weight: 600;
+}
+#spotlight section.container p {
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: #42526e;
+  margin-top: 15px;
+}
+#spotlight section.container a.button {
+  color: black;
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #0052cc;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 3px;
+  margin-top: 20px;
+}
+#spotlight section.container span.label {
+  flex-direction: column;
+  font-size: 1rem;
+  max-width: 800px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+#spotlight section.container span.label a {
+  display: inline-block;
+  color: #0057db;
+}
+#spotlight section.container span.label a img {
+  width: 13px;
+  margin-right: 10px;
+}
+#spotlight section.container img.spotlight-img {
+  width: 80%;
+}
+#features {
+}
+#features img {
+  transform: rotate(-180deg);
+}
+#features section.wrapper {
+}
+#features section.wrapper ul {
+  text-align: center;
+  display: flex;
+  margin-top: 60px;
+  justify-content: space-between;
+}
+
+#features section.wrapper ul li {
+  display: inline-block;
+  width: 310px;
+}
+#features section.wrapper ul li img {
+  width: 130px;
+  display: inline-block;
+}
+#features section.wrapper ul li img.active {
+  width: 110px;
+}
+#features section.wrapper ul li img.continuous-delivery {
+  transform: rotate(0deg);
+}
+#features section.wrapper ul li h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  max-width: 370px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#features section.wrapper ul li p {
+  max-width: 350px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 20px;
+}
+#features section.wrapper ul li p a {
+  color: rgb(61, 61, 214);
+  font-weight: 500;
+  font-family: sans-serif;
+}
+#highlight {
+  padding: 50px 10px;
+}
+#highlight section.wrapper {
+}
+#highlight section.item {
+  display: flex;
+  margin-top: 65px;
+}
+#highlight section.item.center {
+
+}
+#highlight section.item div.img-container {
+  display: inline-block;
+}
+#highlight section.item div.img-container img {
+  width: 95%;
+  display: inline-block;
+}
+#highlight section.item div.content-box {
+  display: inline-block;
+  width: 60%;
+  margin-top: 20px;
+
+  margin-right: 10px;
+}
+#highlight section.item div.content-box span {
+  color: #42526e;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+}
+
+element.style {
+}
+#highlight section.item div.content-box h3 {
+  max-width: 365px;
+  color: #253858;
+  letter-spacing: 0;
+  font-weight: 550;
+  font-size: 30px;
+  margin: 0 auto;
+  text-align: start;
+  margin-top: 10px;
+  font-family: Charlie Display, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+}
+#highlight section.item div.content-box p {
+  font-size: 1.25rem;
+  letter-spacing: 0.3px;
+  line-height: 1.4;
+  color: #42526e;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#highlight section.item div.content-box a.button {
+  color: #0052cc;
+}
+#highlight section.item div.content-box a.button img {
+}
+#help {
+  background-color: #f4f5f7;
+  padding: 60px 20px 0px 20px;
+}
+#help section.wrapper {
+}
+#help section.top {
+}
+#help section.top h3 {
+  font-size: 2.75rem;
+  line-height: 1.18181818;
+  font-weight: 600;
+  font-family: sans-serif;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+#help section.top p {
+  color: #42526e;
+  font: 1.2rem;
+  max-width: 50%;
+  margin: 0 auto;
+  font-size: 20px;
+  margin-top: 10px;
+  font-family: sans-serif;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+#help section.top ul {
+  display: flex;
+  justify-content: center;
+}
+
+#help section.top ul li {
+  display: inline-block;
+  width: 36%;
+  height: 400px;
+  background-color: #fff;
+  padding: 40px 40px;
+  border-radius: 4px;
+  margin: 30px 15px 0px 15px;
+  position: relative;
+}
+#help section.top ul li div.img-container {
+}
+#help section.top ul li div.img-container img {
+  width: 80px;
+}
+
+#help section.top ul li h4 {
+  max-width: 355px;
+  font-size: 1.3rem;
+  line-height: 1.33333333;
+  font-weight: 600;
+}
+#help section.top ul li p {
+  font-size: 17px;
+  max-width: 325px;
+}
+#help section.top ul li a.button {
+  color: #145fd0;
+  position: absolute;
+}
+#help section.top ul li a.button img {
+}
+#help section.bottom {
+}
+#help section.bottom h3 {
+  font-size: 38px;
+  line-height: 1.18181818;
+  font-weight: 600;
+  font-family: sans-serif;
+  max-width: 613px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-top: 50px;
+}
+#help section.bottom p {
+  color: #42526e;
+  font: 1rem;
+  max-width: 65%;
+  margin: 0 auto;
+  font-size: 20px;
+  margin-top: 10px;
+  font-family: sans-serif;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+#help section.bottom ul {
+  display: flex;
+  justify-content: space-between;
+}
+#help section.bottom ul li {
+  display: inline-block;
+  width: 34%;
+  height: 400px;
+  padding: 40px 20px;
+}
+#help section.bottom ul li div.img-container {
+  display: inline-block;
+}
+#help section.bottom ul li div.img-container img {
+  width: 120px;
+  display: inline-block;
+}
+#help section.bottom ul li div.img-container img.active {
+  width: 172px;
+}
+
+#help section.bottom ul li h4 {
+  max-width: 100%;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+#help section.bottom ul li p {
+  max-width: 100%;
+  font-size: 16px;
+  color: #091e42;
+  font-weight: 500;
+  margin: 15px 0px 20px 0px;
+}
+#help section.bottom ul li a.button {
+  color: #0052cc;
+}
+#brand {
+}
+#brand img {
+  transform: rotate(-180deg);
+  display: block;
+}
+#brand section.wrapper {
+}
+#brand section.container {
+}
+#brand section.container h3 {
+  font-size: 35px;
+  font-weight: 600;
+  font-family: sans-serif;
+  max-width: 57%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+}
+#brand section.container div.img-container {
+  text-align: center;
+  margin-top: 30px;
+  border-bottom: 2px solid #dfe1e5;
+  padding: 30px 10px;
+}
+#brand section.container div.img-container img.active {
+  transform: rotate(0deg);
+  display: inline-block;
+}
+#pricing {
+  padding: 50px 15px;
+}
+#pricing section.wrapper {
+}
+#pricing section.top {
+}
+#pricing section.top h3 {
+  font-size: 35px;
+  max-width: 56%;
+  margin: 0 auto;
+  font-weight: 600;
+  text-align: center;
+}
+#pricing section.top ul {
+  display: flex;
+}
+#pricing section.top ul li {
+  height: 420px;
+  width: 32%;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  margin: 60px 0px 0px 30px;
+}
+#pricing section.top ul li:first-child {
+  margin-left: 0px;
+}
+
+#pricing section.top ul li div.tittle {
+  width: 100%;
+  height: 90px;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 5%), 0 0 10px 0 rgb(0 0 0 / 4%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#pricing section.top ul li div.tittle.bg {
+  background-color: #f4f5f7;
+}
+#pricing section.top ul li div.tittle h5 {
+  font-size: 23px;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+#pricing section.top ul li div.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#pricing section.top ul li div.content h4 {
+  font-size: 44px;
+  font-weight: bolder;
+  margin-top: 50px;
+  max-width: 100%;
+}
+#pricing section.top ul li div.content span.user {
+  margin-top: 17px;
+  max-width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+}
+#pricing section.top ul li div.content small {
+  margin-top: 5px;
+  max-width: 100%;
+}
+#pricing section.top ul li div.content a.button {
+  padding: 8px 14px;
+  border: 1.5px solid #004099;
+  display: inline-block;
+  color: #0052cc;
+  margin-top: 25px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+#pricing section.top ul li div.content a.button.fill {
+  background-color: #0052cc;
+  color: #fff;
+}
+#pricing section.top ul li div.content span.label {
+  margin-top: 25px;
+  color: #1a62d0;
+}
+#pricing section.top div.bottom {
+  width: 100%;
+  height: 80px;
+  display: inline-block;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px 0px 0px;
+}
+#pricing section.top div.bottom p {
+  font-size: 17px;
+}
+#pricing section.top div.bottom p b {
+  color: #0052cc;
+  font-weight: 600;
+}
+#pricing section.top div.bottom p a {
+  color: #034299;
+}
+
+#pricing section.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#pricing section.bottom a.label {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  color: #0052cc;
+}
+
+#pricing section.bottom div.content {
+  height: 480px;
+  background-color: #f4f5f7;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  padding: 20px 30px;
+}
+#pricing section.bottom div.content div.item {
+  display: flex;
+  justify-content: space-between;
+}
+#pricing section.bottom div.content div.item div.left {
+  display: inline-block;
+}
+#pricing section.bottom div.content div.item div.left img {
+  width: 100px;
+  display: inline-block;
+}
+#pricing section.bottom div.content div.item div.right {
+  width: 720px;
+}
+#pricing section.bottom div.content div.item div.right h3 {
+  font-size: 35px;
+  font-weight: 700;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 10px 0px 10px 0px;
+}
+#pricing section.bottom div.content div.item div.right p {
+  color: #142849;
+  max-width: 89%;
+  padding: 10px 0px 10px 0px;
+  color: #2269d2;
+}
+#pricing section.bottom div.content div.item div.right a.button {
+  color: #2269d2;
+  padding: 10px 0px 10px 0px;
+}
+#banner {
+  min-height: 300px;
+  background-image: url(../images/left_bottom_hero.png),
+    url(../images/right_bottom_hero.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom left, bottom right;
+  background-size: 600px 300px, 600px 300px;
+}
+#banner section.wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+#banner section.wrapper h3 {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+#banner section.wrapper a.button {
+  padding: 8px 14px;
+  border: 1.5px solid #004099;
+  display: inline-block;
+  color: #eff2f7;
+  margin-top: 25px;
+  border-radius: 3px;
+  font-weight: 500;
+  background-color: #0052cc;
+  font-weight: 600;
+  margin-top: 30px;
+}
+footer {
+  padding: 70px 20px 20px 20px;
+  background-color: #f4f5f7;
+}
+footer section.wrapper {
+}
+footer section.top {
+  display: flex;
+  justify-content: space-between;
+}
+footer section.top div.item {
+  display: flex;
+  flex-direction: column;
+}
+
+footer section.top div.item h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+footer section.top div.item ul {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 165px;
+}
+footer section.top div.item ul li {
+  margin-top: 10px;
+  color: #6b788d;
+  font-size: 14px;
+}
+footer section.top div.item ul li a {
+  display: inline-block;
+}
+footer section.top div.item.large {
+  display: inline-block;
+  max-width: 600px;
+}
+footer section.top div.item.large p {
+  color: #6b788d;
+  margin-top: 25px;
+}
+footer section.top div.item.large form {
+  display: flex;
+  justify-content: space-between;
+}
+footer section.top div.item.large input[type="email"] {
+  background-color: #fff;
+  width: 500px;
+  display: inline-block;
+  border: 1px solid #787878;
+  background-color: #fff;
+  height: 40px;
+  color: #787878;
+  border-radius: 3px;
+  padding: 5px 20px;
+  margin-top: 32px;
+  font-size: 16px;
+}
+
+footer section.top div.item.large input[type="submit"] {
+  display: inline-block;
+  border: 1.8px solid blue;
+  padding: 8px 30px;
+  margin-left: 20px;
+  color: #0052cc;
+  font-weight: 600;
+  border-radius: 2px;
+  font-size: 16px;
+  margin-top: 32px;
+}
+footer section.top div.item.large a.button {
+  display: inline-block;
+}
+footer section.top div.item.large div.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+footer section.top div.item.large div.social p {
+  margin-left: 280px;
+  color: #42526e;
+  font-size: 17px;
+  max-width: 180px;
+}
+footer section.top div.item.large div.social ul {
+  display: flex;
+  flex-direction: row;
+}
+footer section.top div.item.large div.social ul li {
+}
+footer section.top div.item.large div.social ul li a {
+  margin-right: 7px;
+}
+footer section.top div.item.large div.social ul li a img {
+  width: 30px;
+  display: inline-block;
+}
+footer section.bottom {
+  padding: 0px 15px;
+  border-top: 2px solid #dfe1e5;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+footer section.bottom div.left {
+  display: flex;
+  flex-direction: column;
+  display: inline-block;
+  justify-content: space-evenly;
+}
+footer section.bottom div.left div.top {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+footer section.bottom div.left div.top h1.left {
+}
+footer section.bottom div.left div.top h1.left a {
+}
+footer section.bottom div.left div.top h1.left a img {
+  width: 130px;
+  display: inline-block;
+}
+footer section.bottom div.left div.top ul {
+  display: flex;
+}
+footer section.bottom div.left div.top ul li {
+  margin-left: 20px;
+  display: inline-block;
+}
+footer section.bottom div.left div.top ul li a {
+  font-size: 15px;
+}
+footer section.bottom div.left div.top p {
+  margin-left: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+footer section.bottom div.left div.bottom {
+}
+footer section.bottom div.left div.bottom {
+}
+footer section.bottom div.left div.bottom form {
+  
+}
+
+footer section.bottom div.left div.bottom form select {
+  display: inline-block;
+  margin-top: 50px;
+}
+footer section.bottom div.right {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+footer section.bottom div.right a.button {
+  margin-top: 20px;
+  display: flex;
+  color: #0057db;
+  font-size: 15px;
+  justify-content: center;
+}
+footer section.bottom div.right a.button img {
+  margin-left: 4px;
+  color: #091e42;
+  text-align: center;
+  width: 15px;
+  margin-left: 10px;
+}
+@media all and (max-width: 1280px) {
+  header nav.middle {
+    margin-right: 0px;
+}
+#highlight section.item div.content-box {
+  width: 100%;
+  margin-top: 0px;
+  margin-right: 0px;
+}
+#highlight section.item div.img-container img {
+  width: 100%;
+}
+
+}
+@media all and (max-width: 1280px) {
+  header nav.middle ul {
+    display: none;
+}
+header section.wrapper {
+  justify-content: space-between;
+}
+#brand section.container div.img-container img.active {
+  width: 100%;
+}
+footer section.top div.item.large form {
+  width: 85%;
+}
+header section.wrapper {
+ 
+  justify-content: space-around;
+}
+#highlight section.item {
+  flex-direction: column;
+}
+#highlight section.item.center {
+  flex-direction: column-reverse;
+}
+
+#highlight section.item div.content-box h3 {
+  max-width: 100%;
+}
+#highlight section.item div.content-box p {
+  max-width: 100%;
+}
+#highlight section.item div.content-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#pricing section.bottom div.content {
+  height: 597px;
+}
+#help section.top h3 {
+  width: 100%;
+  text-align: center;
+}
+#help section.top p {
+  width: 100%;
+  text-align: center;
+}
+#help section.top ul li {
+  width: 50%;
+}
+#help section.top ul li h4 {
+  font-size: 20px;
+  text-align: center;
+  max-width: 100%;
+}
+#highlight section.item div.content-box h3 {
+  text-align: center;
+}
+#help section.bottom p {
+  text-align: center;
+}
+#brand section.container h3 {
+  max-width: 80%;
+}
+#pricing section.top h3 {
+  max-width: 85%;
+}
+
+footer section.top div.item.large input[type="email"] {
+  width: 100%;
+
+}
+footer section.top div.item.large input[type="submit"] {
+  padding: 8px 13px;
+}
+footer section.top div.item.large {
+  max-width: 57%;
+}
+footer section.top div.item.large div.social p {
+  max-width: 100%;
+}
+footer section.top div.item.large div.social p {
+  margin-left: 0px;
+  color: #42526e;
+  font-size: 17px;
+  max-width: 171px;
+  display: inline-block;
+}
+footer section.top div.item.large div.social {
+  justify-content: space-evenly;
+}
+footer section.bottom {
+  flex-direction: column-reverse;
+}
+#help section.bottom ul li h4 {
+  text-align: center;
+}
+#help section.bottom ul li {
+  padding: 30px 0px;
+}
+#help section.bottom ul li  {
+  text-align: center;
+}
+footer section.bottom div.right {
+    display: flex;
+    justify-content: flex-start;
+}
+}
+@media all and (max-width: 768px) {
+  #features section.wrapper ul li {
+    width: 50%;
+    margin-top: 40px;
+  }
+ 
+  #features section.wrapper ul {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #help section.top ul {
+    flex-wrap: wrap;
+  }
+  #help section.top ul li {
+    width: 100%;
+  } 
+  #help section.bottom h3 {
+     text-align: center;
+  }
+  #help section.bottom ul li {
+    width: 50%;
+  }
+  #help section.bottom ul {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #pricing section.top ul li:first-child {
+    width: 45%;
+}
+#pricing section.top ul {
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#pricing section.top ul li {
+  width: 45%;
+}
+#pricing section.bottom div.content div.item {
+  flex-direction: column;
+  margin-top: 30px;
+}
+#pricing section.bottom div.content div.item div.right {
+  width: 100%;
+}
+#pricing section.bottom div.content {
+  height: auto;
+}
+#banner {
+  min-height: 300px;
+  background-image: url(../images/left_bottom_hero.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 600px 300px;
+}
+footer section.bottom div.left div.top {
+  flex-direction: column;
+}
+
+footer section.bottom div.left div.top ul {
+  margin: 10px 0px 10px 0px;
+}
+input[type="submit"] {
+  padding: 8px 6px;
+  font-size: 12px;
+}
+footer section.bottom div.left div.top p {
+  text-align: start;
+}
+footer {
+  padding: 70px 0px 20px 0px;
+}
+footer section.top div.item.large input[type="submit"] {
+  padding: 5px 2px;
+  font-size: 14px ;
+} 
+ }
+ @media all and (max-width: 640px) {
+
+  header nav.right ul li a {
+    display: none;
+}
+#spotlight section.container h1 {
+  font-size: 31px;
+}
+#spotlight section.container p {
+  font-size: 19px;
+}
+#spotlight section.container span.label {
+  line-height: 25px;
+}
+#spotlight section.container img.spotlight-img {
+  width: 100%;
+}
+#spotlight {
+  padding: 100px 36px;
+  background-color: #f4f5f7;
+}
+#features section.wrapper ul li {
+  width: 100%;
+  
+}
+#features section.wrapper ul li p {
+  max-width: 100%;
+}
+#highlight section.item div.content-box h3 {
+font-size: 25px;
+
+ }
+ #help section.top h3 {
+  font-size: 39px;
+}
+#help section.top p {
+  font-size: 17px;
+}
+#help section.bottom h3 {
+  font-size: 27px;
+ }
+ #help section.bottom p {
+  font-size: 18px;
+}
+#help section.bottom ul li {
+  width: 100%;
+}
+#help {
+  padding: 18px 20px 0px 20px;
+}
+#brand section.container h3 {
+  font-size: 28px;
+}
+#pricing section.top h3 {
+  font-size: 29px;
+}
+#pricing section.top ul li {
+  width: 100%;
+  margin: 15px 0px;
+}
+#pricing section.top ul li:first-child {
+  width: 100%;
+
+}
+#pricing section.top div.bottom p {
+  text-align: center;
+}
+#pricing section.bottom div.content {
+  width: 100%;
+}
+footer section.top {
+  flex-direction: column;
+}
+footer section.top div.item {
+  margin: 10px 0px 20px 0px;
+}
+footer section.top div.item ul {
+  margin-top: 10px;
+}
+footer section.top div.item.large form {
+  width: 100%;
+}
+footer section.top div.item.large input[type="email"] {
+  width: 230px;
+}
+footer section.top div.item.large div.social ul li a img {
+  width: 24px;
+}
+
+}
+@media all and (max-width: 480px) {
+  header nav.right ul li {
+    display: none;
+}
+header h1.left {
+  width: 100%;
+}
+header section.wrapper {
+  width: 100%;
+}
+header h1.left {
+  width: 0%;
+}
+header section.wrapper {
+  width: 50%;
+}
+#help section.top ul li {
+  height: auto;
+}
+#pricing section.bottom div.content div.item div.right h3 {
+  font-size: 25px;
+}
+footer section.bottom div.left div.top ul {
+  flex-direction: column;
+}
+footer section.bottom div.left div.top ul li {
+  margin-top: 5px;
+}
+
+}
+@media all and (max-width: 480px) {
+  #banner {
+ background: white;
+}
+footer section.top div.item.large input[type="submit"] {
+  padding: 8px 2px;
+  font-size: 11px;
+}
+ 
+
+
+
+
+
